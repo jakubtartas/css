@@ -1,4 +1,84 @@
-Temat: Sposoby podłączania CSS do kodu strony WWW
-Pięć sposobów, konieczne obramowania (mogą być tabele jednokomórkowe), teksty (składnię 
-teoretyczną) można wstawiać w polach Textarea. Konieczne podkreślenia pogrubienia.
-uwaga: Do tego zadania nie wykonujemy linku do Kodu zadania w szkielecie.
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sposoby podłączania styli do strony</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 25px;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-weight: bold;
+        }
+        .code {
+            background-color: #fafafa;
+            border: 2px solid #555a;
+            padding: 10px;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sposoby podłączania styli do strony</h1>
+
+    <div class="section">
+        <div class="section-title">1) Zewnętrzny arkusz stylów.</div>
+        <div class="code">
+&lt;head&gt;<p style="text-indent: 20px">
+   &lt;link rel="stylesheet" type="text/css" href="style.css" /&gt;</p>
+&lt;/head&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">2) Styl lokalny inaczej styl wpisany, liniowy, linijkowy, w linii, czyli dopisanie arkusza do wybranego bloku treści strony.</div>
+        <div class="code">
+&lt;selektor style="cecha1: wartość1; cecha2: wartość2;..."&gt;...&lt;/selektor&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">3) Wewnętrzny arkusz stylów.</div>
+        <div class="code">
+&lt;head&gt;<p style="text-indent: 20px">
+    &lt;style type="text/css"&gt;</p>
+       <p style="text-indent: 40px"> selektor1 { cecha: wartość; cecha2: wartość2; ... }</p>
+        <p style="text-indent: 40px">selektor2 { cecha: wartość; cecha2: wartość2; ... }</p>
+   <p style="text-indent: 20px"> &lt;/style&gt;</p>
+&lt;/head&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">4) Alternatywny arkusz stylów.</div>
+        <div class="code">
+&lt;head&gt;
+    <p style="text-indent: 20px">&lt;link rel="stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" /&gt;</p>
+    <p style="text-indent: 20px">&lt;link rel="alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt;</p>
+    <p style="text-indent: 20px">&lt;link rel="alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" /&gt;</p>
+&lt;/head&gt;
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">5) Import arkusza stylów.</div>
+        <div class="code">
+&lt;style type="text/css"&gt;
+   <p style="text-indent: 20px"> @import url(adres zewnętrznego arkusza stylów);</p>
+&lt;/style&gt;
+        </div>
+    </div>
+
+</body>
+</html>
