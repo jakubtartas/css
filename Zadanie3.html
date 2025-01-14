@@ -1,3 +1,74 @@
-Temat: Cechy modyfikowania formatowania w HTML oraz CSS (tabela). Nowe możliwości 
-CSS w porównaniu z HTML (wyliczenie→numerowane). Wady CSS z wyliczeniem.
-uwaga: Do tego zadania nie wykonujemy linku do Kodu zadania w szkielecie.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML vs CSS Formatting</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+            text-align: center;
+            table-layout: fixed;
+        }
+        th, td {
+            border: 1.5px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f5f5f5;
+            font-weight: bold;
+        }
+        .highlight {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Cechy modyfikowania formatowania w:</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>w HTML</td>
+                <td>w CSS</td>
+            </tr>
+            <tr>
+                <td>
+                    modyfikacja wyglądu elementów strony jest bardzo <span class="highlight">żmudna</span> (atrybuty i znaczniki które za to odpowiadają, są porozrzucane w różnych miejscach kodu, mieszając się ze strukturą dokumentu).
+                </td>
+                <td>
+                    rozdzielenie <span class="highlight">struktury</span> i <span class="highlight">prezentacji</span> dokumentów czyli: wszystkie polecenia dotyczące formatowania można umieścić w jednym miejscu (tzw. arkuszu) i powiązać je z konkretnymi elementami, wstawionymi za pomocą czystego (X)HTML. Taki sposób sprawia, że modyfikacja wyglądu stron może przebiegać dużo sprawniej.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+  <h2>Nowe możliwości CSS</h2>
+    <ol>
+        <li>Przestarzałe atrybuty i znaczniki, znajdujące się bezpośrednio w składni HTML, które dotyczą formatowania (elementy zdeprecjonowane), będą stopniowo wypychane przez producentów przeglądarek internetowych, a ich miejsce zajmą mechanizmy bardziej deklaracji CSS.</li>
+        <li>Dokumenty pisane z wykorzystaniem arkuszy stylów są zwykle bardziej przejrzyste i krótsze.</li>
+        <li>Style pozwalają w łatwy sposób zarządzać całą serią dokumentów, poprzez stosowanie zewnętrznych arkuszy stylów.</li>
+        <li>Dzięki możliwości stosowania klas selektorów, znacznie oszczędzamy sobie pisania. W jednym miejscu określamy wszystkie atrybuty formatowania (których może być bardzo wiele) dla całego zbioru elementów, które mają wyglądać tak samo. Bezpośrednio przy elemencie wystarczy podać tylko nazwę klasy i nie musimy już wypisywać wielu dodatkowych deklaracji. Znacznie przyspiesza to projektowanie następnych strony, ponieważ często możemy wykorzystać tylko w jednym miejscu, a wpływać one na wiele elementów jednocześnie.</li>
+        <li>Możliwość stosowania różnorodnych metod oraz sposobów definiowania kolorów.</li>
+        <li>Efekty wizualne: pogrubienia czcionki (9 rodzajów)</li>
+        <li>Dodatkowe możliwości formatowania tabel.</li>
+        <li>Efektywnie filtrowanie styli.</li>
+        <li>Dodatkowe możliwości określenia wyglądu dokumentów podczas ich drukowania.</li>
+    </ol>
+    <p>W ciągłym opracowaniu są style poziomu trzeciego (CSS 3), które oferują jeszcze więcej możliwości. Aby dowiedzieć się więcej, sprawdzaj strony organizacji W3C oraz najnowsze specyfikacje.</p>
+
+    <h2>Wady CSS</h2>
+    <ol>
+        <li>Złożona specyfikacja (składnia) nietolerująca, żadnych błędów składniowych.</li>
+        <li>Problemy związane z błędów podczas wykonywania styli CSS oraz podczas ich realizacji.</li>
+        <li>Błędne obsługiwanie CSS przez różne przeglądarki.</li>
+    </ol>
+</body>
+</html>
