@@ -14,14 +14,13 @@
             align-items: center;
             height: 100vh;
             flex-direction: column;
+            gap: 20px;
         }
         .code-container {
-            width: 80%;
-            margin-bottom: 20px;
+            width: 60%;
         }
         textarea {
             width: 100%;
-            height: 400px;
             font-family: "Courier New", Courier, monospace;
             font-size: 14px;
             line-height: 1.6;
@@ -32,6 +31,12 @@
             padding: 10px;
             resize: none;
         }
+        .code-container.html textarea {
+            height: 313px;
+        }
+        .code-container.css textarea {
+            height: 112px;
+        }
         .title {
             font-weight: bold;
             margin-bottom: 10px;
@@ -40,7 +45,8 @@
     </style>
 </head>
 <body>
-    <div class="code-container">
+    <!-- HTML Code Box -->
+    <div class="code-container html">
         <div class="title">KOD HTML</div>
         <textarea readonly>
 <html>
@@ -58,7 +64,8 @@
         </textarea>
     </div>
 
-    <div class="code-container">
+    <!-- CSS Code Box -->
+    <div class="code-container css">
         <div class="title">KOD CSS</div>
         <textarea readonly>
 p {
