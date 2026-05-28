@@ -1,0 +1,28 @@
+.silver-bg {
+    background-color: silver;
+}
+
+.green-large {
+    color: green;
+    font-size: 25mm;
+}
+
+.red-xlarge {
+    color: red;
+    font-size: 40mm;
+}
+
+ol li.purple,
+ol li.purple span {
+    color: rgb(128,0,128);
+}
+
+ol li.pink,
+ol li.pink span {
+    color: rgb(255,105,180);
+}
+
+ol li.lightblue,
+ol li.lightblue span {
+    color: rgb(173,216,230);
+}
