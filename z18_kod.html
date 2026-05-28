@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wykonał: Tartas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .code-container {
+            width: 60%;
+        }
+        textarea {
+            width: 100%;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            resize: none;
+        }
+        .code-container.html textarea {
+            height: 300px;
+        }
+        .code-container.css textarea {
+            height: 200px;
+        }
+        .title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="code-container html">
+        <div class="title">KOD HTML</div>
+        <textarea readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>tart_z18</title>
+    <link rel="stylesheet" href="tart_z18.css">
+</head>
+<body>
+
+<div id="blok1">
+    <span class="pierwsze">To jest pierwszy blok DIV.</span><br>
+    <span class="drugie">Znacznik DIV jest elementem blokowym.</span>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+</div>
+
+<div id="blok2">
+    <span class="pierwsze">To jest drugi blok DIV.</span><br>
+    <span class="drugie">Znacznik SPAN jest elementem liniowym.</span>
+
+    <ul>
+        <li>Stylowanie tekstu</li>
+        <li>Kolory</li>
+        <li>Czcionki</li>
+    </ul>
+</div>
+
+<div id="blok3">
+    <span class="pierwsze">To jest trzeci blok DIV.</span><br>
+    <span class="drugie">DIV może zawierać wiele elementów SPAN.</span>
+
+    <ul>
+        <li>Układ strony</li>
+        <li>Sekcje strony</li>
+        <li>Kontenery</li>
+    </ul>
+</div>
+
+</body>
+</html>
+
+<!-- Jakub Tartas -->
+        </textarea>
+    </div>
+
+    <div class="code-container css">
+        <div class="title">KOD CSS</div>
+        <textarea readonly>
+body{
+    background-color:silver;
+    font-family:Arial;
+}
+
+#blok1{
+    width:1208px;   /* 1180 + 28 */
+    background-color:lime;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+#blok2{
+    width:1108px;   /* 1080 + 28 */
+    background-color:olive;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+#blok3{
+    width:1008px;   /* 980 + 28 */
+    background-color:yellow;
+    padding:10px;
+}
+
+.pierwsze{
+    color:navy;
+    font-size:1.2cm;
+    font-weight:bold;
+}
+
+.drugie{
+    color:black;
+    font-size:14px;
+}
+
+ul{
+    color:maroon;
+    font-size:9mm;
+}
+        </textarea>
+    </div>
+</body>
+</html>
