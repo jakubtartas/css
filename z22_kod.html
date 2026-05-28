@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wykonał: Tartas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .code-container {
+            width: 60%;
+        }
+        textarea {
+            width: 100%;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            resize: none;
+        }
+        .code-container.html textarea {
+            height: 300px;
+        }
+        .code-container.css textarea {
+            height: 200px;
+        }
+        .title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="code-container html">
+        <div class="title">KOD HTML</div>
+        <textarea readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Jakub Tartas Z22_html</title>
+    <link rel="stylesheet" href="tart_z22.css">
+</head>
+<body>
+
+<p>Jakub Tartas - akapit podstawowy.</p>
+
+<p id="gruby_tartas">
+    Jakub Tartas - akapit pogrubiony.
+</p>
+
+<p id="dlawszystkich_tartas">
+    Jakub Tartas - przykład użycia ID.
+</p>
+
+</body>
+</html>
+
+<!-- Jakub Tartas, 28.05.2026 -->
+        </textarea>
+    </div>
+
+    <div class="code-container css">
+        <div class="title">KOD CSS</div>
+        <textarea readonly>
+p {
+    color: red;
+    font-size: 22pt;
+}
+
+p#gruby_tartas {
+    color: green;
+    font-size: 17pt;
+    font-weight: bold;
+}
+
+p#dlawszystkich_tartas {
+    color: yellow;
+    font-size: 10pt;
+    font-family: Arial;
+}
+        </textarea>
+    </div>
+</body>
+</html>
