@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wykonał: Tartas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .code-container {
+            width: 60%;
+        }
+        textarea {
+            width: 100%;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            resize: none;
+        }
+        .code-container.html textarea {
+            height: 300px;
+        }
+        .code-container.css textarea {
+            height: 200px;
+        }
+        .title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="code-container html">
+        <div class="title">KOD HTML</div>
+        <textarea readonly>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadanie 19 - Jakub Tartas</title>
+    <link rel="stylesheet" href="tart_z19.css">
+</head>
+
+<body>
+
+<div class="silver-bg">
+
+    <span class="green-large">
+        <b>To jest pogrubienie w ramach DIV oraz SPAN i dlatego jest zielone na srebrnym tle</b>,
+        a to jest zwykły tekst - również wewnątrz DIV i SPAN.
+    </span>
+
+    <br><br>
+
+    To jest zwykły tekst, ale tylko wewnątrz DIV - dlatego nie jest zielony, ale ma srebrne tło.
+
+    <p class="red-xlarge">
+        A to jest akapit (element blokowy) w ramach DIV.
+    </p>
+
+</div>
+
+<br>
+
+<span class="green-large">
+    <b>To jest pogrubienie (element wyświetlany w linii) w ramach SPAN</b>,
+    a to jest zwykły tekst - również wewnątrz SPAN.
+</span>
+
+<br><br>
+
+<ol>
+    <li class="purple">
+        <span>
+            Punkt pierwszy
+        </span>
+    </li>
+
+    <li class="pink">
+        <span>
+            Punkt drugi
+        </span>
+    </li>
+
+    <li class="lightblue">
+        <span>
+            Punkt trzeci
+        </span>
+    </li>
+</ol>
+
+</body>
+</html>
+
+<!-- Jakub Tartas -->
+        </textarea>
+    </div>
+
+    <div class="code-container css">
+        <div class="title">KOD CSS</div>
+        <textarea readonly>
+.silver-bg {
+    background-color: silver;
+}
+
+.green-large {
+    color: green;
+    font-size: 25mm;
+}
+
+.red-xlarge {
+    color: red;
+    font-size: 40mm;
+}
+
+ol li.purple,
+ol li.purple span {
+    color: rgb(128,0,128);
+}
+
+ol li.pink,
+ol li.pink span {
+    color: rgb(255,105,180);
+}
+
+ol li.lightblue,
+ol li.lightblue span {
+    color: rgb(173,216,230);
+}
+        </textarea>
+    </div>
+</body>
+</html>
