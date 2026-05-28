@@ -1,0 +1,40 @@
+body{
+    background-color:silver;
+    font-family:Arial;
+}
+
+#blok1{
+    width:1208px;   /* 1180 + 28 */
+    background-color:lime;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+#blok2{
+    width:1108px;   /* 1080 + 28 */
+    background-color:olive;
+    padding:10px;
+    margin-bottom:10px;
+}
+
+#blok3{
+    width:1008px;   /* 980 + 28 */
+    background-color:yellow;
+    padding:10px;
+}
+
+.pierwsze{
+    color:navy;
+    font-size:1.2cm;
+    font-weight:bold;
+}
+
+.drugie{
+    color:black;
+    font-size:14px;
+}
+
+ul{
+    color:maroon;
+    font-size:9mm;
+}
