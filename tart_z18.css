@@ -1,40 +1,72 @@
-body{
-    background-color:silver;
-    font-family:Arial;
+body
+{
+    font-family: Arial;
 }
 
-#blok1{
-    width:1208px;   /* 1180 + 28 */
-    background-color:lime;
-    padding:10px;
-    margin-bottom:10px;
+/* BLOK 1 */
+
+#blok1
+{
+    width:1208px;
+    background-color:gray;
 }
 
-#blok2{
-    width:1108px;   /* 1080 + 28 */
-    background-color:olive;
-    padding:10px;
-    margin-bottom:10px;
-}
-
-#blok3{
-    width:1008px;   /* 980 + 28 */
-    background-color:yellow;
-    padding:10px;
-}
-
-.pierwsze{
-    color:navy;
+.zdanie1_b1
+{
+    color:fuchsia;
     font-size:1.2cm;
-    font-weight:bold;
 }
 
-.drugie{
-    color:black;
-    font-size:14px;
-}
-
-ul{
-    color:maroon;
+.lista1
+{
+    color:blue;
     font-size:9mm;
+    list-style-type:circle;
+}
+
+/* BLOK 2 */
+
+#blok2
+{
+    width:1008px;
+    background-color:red;
+}
+
+.zdanie1_b2
+{
+    color:green;
+    font-size:1.6cm;
+}
+
+.lista2
+{
+    color:maroon;
+    font-size:7mm;
+    list-style-type:square;
+}
+
+/* BLOK 3 */
+
+#blok3
+{
+    width:1108px;
+    background-color:silver;
+}
+
+.zdanie1_b3
+{
+    color:navy;
+    font-size:1.4cm;
+}
+
+.zdanie2_b3
+{
+    font-size:8mm;
+}
+
+.lista3
+{
+    color:red;
+    font-size:7mm;
+    list-style-type:circle;
 }
