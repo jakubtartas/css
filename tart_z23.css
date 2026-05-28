@@ -1,0 +1,39 @@
+p#pogrubienie_tartas {
+    font-size: 30px;
+    color: #8B4513;
+    font-weight: bold;
+}
+
+p#pochylona_tartas {
+    font-size: 35pt;
+    color: #CD853F;
+    font-style: italic;
+}
+
+p#index_gorny_tartas {
+    font-size: 1cm;
+    color: #7B68EE;
+    vertical-align: super;
+}
+
+p#index_dolny_tartas {
+    font-size: 1.5cm;
+    color: #228B22;
+    vertical-align: sub;
+}
+
+p#mono_tartas {
+    font-size: 40px;
+    color: #DC143C;
+    font-family: monospace;
+}
+
+p#powiekszenie_tartas {
+    color: #4682B4;
+    font-size: larger;
+}
+
+p#pomniejszenie_tartas {
+    color: #B22222;
+    font-size: smaller;
+}
